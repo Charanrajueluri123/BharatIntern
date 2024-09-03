@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.kwE8IapDUTtylieeRnn2YAHaHa?pid=ImgDet&rs=1" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Complete</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #00c6ff, #0072ff); 
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            overflow: hidden; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+            position: relative;
+        }
+
+        .shape {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.4); 
+            animation: float 4s infinite; 
+        }
+
+        .shape1 {
+            width: 60px;
+            height: 60px;
+            top: 30%;
+            left: 10%;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Triangle */
+        }
+
+        .shape2 {
+            width: 80px;
+            height: 80px;
+            top: 10%;
+            left: 60%;
+            clip-path: polygon(25% 100%, 0% 40%, 50% 0%, 100% 40%, 75% 100%); /* Pentagon */
+        }
+
+        .shape3 {
+            width: 70px;
+            height: 70px;
+            top: 80%;
+            left: 30%;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); /* Star */
+        }
+
+        .shape4 {
+            width: 100px;
+            height: 100px;
+            top: 20%;
+            left: 40%;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Hexagon */
+        }
+
+        .shape5 {
+            width: 90px;
+            height: 90px;
+            top: 80%;
+            left: 90%;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Diamond */
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .container {
+            text-align: center;
+            padding: 60px;
+            background-color: rgba(255, 255, 255, 0.3); 
+            border-radius: 20px; 
+        }
+
+        h1, p {
+            color: #ffffff; 
+            font-size: 28px; 
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+    <div class="shape shape4"></div>
+    <div class="shape shape5"></div>
+
+    <div class="container">
+        <h1>🎉 Registration Successful !!</h1>
+        <p>Thank you for registering.</p>
+    </div>
+</body>
+
+</html>
